@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+:root{
+    --violet:#6c5ce7;
+    --pink:#FC427B;
+    --gradient:linear-gradient(90deg, var(--violet), var(--pink));
+}
+
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    outline: none;border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transform: all .2s esae-out;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color:#333;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #fff ;
+    border-radius: 5rem;
+}
+
+body{
+    background:var(--gradient);
+    padding: 3rem 7%;
+    padding-bottom: 9rem;
+}
+
+.container{
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding:2rem 7%;
+    border-bottom: .1rem solid rgba(0,0,0,.1);
+    position: relative;
+    z-index:1000;
+}
+
+header .logo{
+    font-size: 2.5rem;
+    color:var(--violet);
+    font-weight: bold;
+
+}
+
+header .logo span{
+    color: var(--pink);
+}
+
+header .navbar a{
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+header .navbar a:hover{
+    color: var(--pink);
+}
+
+#menu{
+    font-size: 2.5rem;
+    padding: .5rem 1rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* footer section */
+
+
+
+footer{
+    padding: 2rem 7%;
+}
+
+footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: ; */
+}
+
+
+footer .box-container .box{
+    flex: 1 1 20rem;
+}
+
+
+footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--violet);
+    padding: .7rem 0;
+}
+
+footer .box-container .box p{
+    font-size: 1.5rem;
+    color:#666;
+    padding: .7rem 0;
+    user-select: none;
+}
+
+footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color:#666;
+    padding: .7rem 0;
+}
+
+footer .box-container .box a:hover{
+    color: var(--pink);
+}
+
+footer .box-container .box p i{
+    padding-right: .5rem;
+    color: var(--pink);
+}
+
+#box i{
+    color: var(--violet);
+    }
+    
+footer .credit{
+
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding:1rem;
+    padding-top: 2rem;
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    color: #666;
+}
+
+
+footer .credit span{
+    color: var(--pink);
+}
+
+/* home section */
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.home .content{
+flex:1 1 40rem;
+padding:2rem ;
+}
+
+.home .image{
+    flex:1 1 40rem;
+}
+    
+.home .content img{
+      width: 100%;
+}
+
+.home .content h3{
+   color: var(--violet);
+   background-color:var(--gradient);
+   -webkit-background-clip: text;
+   background-clip:text;
+   font-size: 4rem;
+}
+    
+.home .content p{
+    padding: .5rem 0;
+    font-size: 1.7rem;
+    color: #666;
+}
+        
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: .5rem;
+    background-color: #666;
+    color: antiquewhite;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--gradient);
+}
+
+
+
+
+/* course section */
+
+.course{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.course .box{
+    flex:1 1 30rem;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    padding: 1rem;
+}
+
+.course .box img{
+    height: 20rem;
+    width: 100%;
+}
+
+.course .box .amount{
+position: absolute;
+/* top: 1rem;left: 1rem; */
+font-size: 2rem;
+padding: .5rem 1rem;
+background:var(--pink);
+color: #fff;
+border-radius: .5rem;
+}
+
+.course .box .stars{
+    color: var(--violet);
+    font-size: 1.5rem;
+}
+
+.course .box h3{
+    font-size: 2.5rem;
+    color: var(--pink);
+}
+
+.course .box p{
+    font-size: 1.5rem;
+    color:#666;
+}
+
+.course .box .icons{
+    display: flex;
+    gap: 3.5rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: .8rem;
+    /* border: .1rem solid red; */
+}
+
+
+/* techer section */
+
+.teacher{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    border: 1px solid red;
+    padding: 2rem;
+}
+
+.teacher .box{
+    flex: 1 1 23rem;
+    text-align: center;
+    border: .1rem solid rgba(0,0,0,.1);
+    padding: 2rem;
+}
+
+
+.teacher .box img{
+    border-radius: 50%;
+    height: 11rem;
+    /* padding-top: 2rem; */
+    /* transition: all  linear; */
+    object-fit: cover;
+    cursor: pointer;
+
+}
+
+.teacher .box img:hover{
+    height: 25rem;
+/* transform: rotate(360deg); */
+}
+
+.teacher .box h3{
+    font-size: 2.5rem;
+    color: var(--violet);
+}
+
+.teacher .box span{
+    color:var(--pink);
+    font-size: 1.5rem;
+}
+
+.teacher .box p{
+    padding: 1.5rem;
+    font-size: 1rem 0;
+    color: #666;
+}
+
+.teacher .box .share{
+}
+
+
+.teacher .box .share a{
+    padding: .1rem;
+}
+
+.teacher .box .share a i{
+    font-size: 2rem;
+    padding: .7rem;
+    color: #fff;
+    background: var(--pink);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.teacher .box .share a i:hover{
+    background: var(--violet);
+}
+
+
+/* price section */
+
+.price{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+
+
+.price .box{
+flex: 1 1 20rem;
+width: 100%;
+/* margin: auto; */
+text-align: center;
+padding:3rem;
+border: .1rem solid rgba(0,0,0,.1);
+}
+
+
+.price .box h3{
+    font-size: 2.5rem;
+    color: #333;
+    padding: 1rem 0;
+}
+
+.price .box .amount{
+    font-size:2.5em;
+    color: #fff;
+    background:var(--gradient);
+    padding: 1rem 0;
+}
+
+.price .box ul{
+    padding: 1rem 0;
+}
+
+
+.price .box ul li{
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+
+/* review section */
+
+
+.review{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.review .box{
+    flex: 1 1 30rem;
+    border:.1rem solid rgba(0,0,0,.1);
+}
+
+.review .box .student{
+padding: 2rem;
+}
+
+.review .box .student .student-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.review .box .student .student-info img{
+    height: 6rem;
+    border-radius: 50%;
+}
+
+
+.review .box .student .student-info .student-name{
+    margin-right: 12rem;
+    text-align: center;
+}
+
+.review .box .student .student-info .student-name h3{
+    font-size: 2rem;
+    color: var(--violet);
+}
+
+
+.review .box .student .student-info .student-name span{
+    size: 1rem;
+    color: #666;
+}
+
+
+.review .box .student .student-info i{
+    font-size: 2.5rem;
+    color: var(--pink);
+}
+
+.review .box .student p{
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+/* contact section */
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact .image{
+    flex: 1 1 35rem;
+}
+
+.contact .image img{
+    width: 100%;
+}
+
+.contact form{
+flex: 1 1 50rem;
+border: .1rem solid rgba(0,0,0,.1);
+border-radius: .5rem;
+padding: 2rem;
+width: 100%;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form .box,
+.contact form textarea{
+    width: 100%;
+    padding: 1rem;
+    margin: .7rem 0;
+    font-size: 1.5rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    text-transform: none;
+    color: #333;
+}
+
+
+/* media queries */
+
+@media (max-width:991px) {
+    
+    html{
+        font-size: 55%;
+    }
+    
+    body{
+        padding: 1.5rem;
+    }
+
+    header{
+        padding: 2rem;
+
+    }
+
+    footer{
+        padding: 2rem;
+    }
+
+}
+
+
+@media (max-width:768px){
+     
+    #menu{
+        display: initial;
+    } 
+    
+header .navbar{
+    position: absolute;
+    top: 100%;left: 0; right: 0;
+    background-color: #fff;
+    border-top: 0.1rem solid rgba(0,0,0,.2);
+    border-bottom: 0.1rem solid rgba(0,0,0,.2);
+    /* height: 50vh; */
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header .navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .navbar a{
+    font-size: 2.5rem;
+    display: block;
+    margin: 2rem 0;
+    text-align: center;
+
+}
+
+}
